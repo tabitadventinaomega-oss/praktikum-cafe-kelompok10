@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   background-color: #fdfaf6;
   color: #2b2118;
 }
@@ -65,11 +65,14 @@ body {
 .menu-grid {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .menu-item {
   width: 320px;
-  flex-shrink: 0;
+  flex: 1 1 288px;
+  max-width: 100%;
+  box-sizing: border-box;
   background: white;
   border-radius: 10px;
   padding: 16px;
